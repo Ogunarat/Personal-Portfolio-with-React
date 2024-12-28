@@ -1,0 +1,142 @@
+.services{
+    background: linear-gradient(180deg,#0c0c1d,#111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 7% 30px;
+}
+.services .title img{
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.services .textContainer{
+    flex: 1;
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+.services .textContainer p{
+    font-weight: 200;
+    font-size: 20px;
+    color: gray;
+    text-align: right;
+}
+.services .textContainer hr{
+    width: 500px;
+    border: none;
+    border-top: 0.5px solid lightgray;
+}
+.services .titleContainer{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.services .titleContainer .title{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.services .titleContainer .title h1{
+    font-size: 86px;
+    font-weight: 100;
+}
+.services .titleContainer .title button{
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.services .listContainer{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1366px;
+    margin: auto;
+    margin-top: 30px;
+    gap: 10px;
+}
+.services .listContainer .box{
+    padding: 30px;
+    border: 0.5px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    gap: 10px;
+}
+.services .listContainer button{
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width:1159px) {
+    .services .titleContainer .title{
+        gap: 30px;
+    }
+    .services .titleContainer .title h1{
+        font-size: 66px;
+        font-weight: 100;
+    }
+    .services .titleContainer .title button{
+        width: 350px;
+        height: 50px;
+        font-size: 14px;
+        
+    }
+
+    .services .listContainer .box{
+        width: 300px;
+        padding: 20px;
+    }
+}
+@media (max-width:1029px) {
+    .services .titleContainer .title{
+        gap: 30px;
+    }
+    .services .titleContainer .title h1{
+        font-size: 56px;
+        font-weight: 100;
+    }
+    .services .titleContainer .title button{
+        width: 250px;
+        height: 50px;
+        font-size: 14px;
+        
+    }
+
+}
+@media (max-width:971px) {
+    .services .listContainer{
+        display: flex;
+        flex: 1;
+    }
+}
+@media (max-width:720px) {
+    .services .textContainer{
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    .services .titleContainer .title{
+        font-size: 40px;
+    }
+    .services .titleContainer .title h1{
+        font-size: 40px;
+    }
+    .services .titleContainer .title img{
+        display: none;
+    }
+    .services .titleContainer .title{
+        flex-direction: column;
+    }
+}

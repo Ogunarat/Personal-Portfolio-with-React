@@ -1,0 +1,124 @@
+.contact{
+    height: 100%;
+    max-width: 1366px;
+    padding: 0px 7%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.contact .textContainer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.contact .textContainer h1{
+    font-size: 60px;
+    line-height: 88px;
+}
+.contact .textContainer span{
+    font-weight: 300;
+}
+.contact .textContainer .item h1{
+    font-size: 30px;
+}
+.contact .formContainer{
+    flex: 1;
+   position: relative;
+}
+.contact .formContainer .phoneSvg{
+    stroke: orange;
+    position: absolute;
+    margin: auto;
+    z-index: -1;
+}
+.contact .formContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact .formContainer form input,
+.contact .formContainer form textarea{
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.contact .formContainer form button{
+    padding: 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact .formContainer form button:hover{
+    background-color: lightgray;
+    color: black;
+}
+@media (max-width:650px) {
+    .contact .textContainer h1{
+        font-size: 40px;
+    }
+    .contact .textContainer span{
+        font-weight: 200;
+    }
+    .contact .textContainer .item h1{
+        font-size: 20px;
+    }
+}
+@media (max-width:500px) {
+    .contact{
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .contact .textContainer{
+       width: 300px;
+       height: 300px;
+       gap: 0px;
+       position: relative;
+    
+    }
+    .contact .formContainer{
+        width: 300px;
+        height: 50%;
+        margin-top: -70px;
+    }
+    .contact .textContainer h1{
+        font-size: 30px;
+    }
+    .contact .textContainer span{
+        font-weight: 100;
+    }
+  
+    .contact .textContainer .item h1{
+        font-size: 15px;
+    }
+    .contact .textContainer .item {
+        margin-top: -30px;
+    }
+    .contact .formContainer form button{
+        padding: 10px;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .contact .formContainer form input,
+    .contact .formContainer form textarea{
+    padding: 10px;
+    }
+    .contact .formContainer .phoneSvg{
+        width: 300px !important;
+        height: 300px !important;
+        margin-left: -100px;
+    }
+}

@@ -1,0 +1,182 @@
+.portfolio{
+    position: relative;
+    padding: 0 7%;
+}
+.portfolio .progress{
+    position: sticky;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 50px;
+    color: orange;
+    font-size: 36px;
+}
+.portfolio .progress .progress-bar{
+    height: 10px;
+    background-color: #fff;
+}
+ .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+ .container .wrapper{
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+.container .wrapper .imageContainer{
+    flex: 1;
+    height: 50%;
+    overflow: hidden;
+}
+ .container .wrapper .imageContaine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .container .wrapper .textContainer{
+    flex: 1;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.container .wrapper .textContainer h2{
+    font-size: 72px;
+
+}
+.container .wrapper .textContainer p{
+    color: gray;
+    font-size: 20px;
+}
+.container .wrapper .textContainer button{
+    background-color: orange;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.container .wrapper .textContainer button:hover{
+    background-color: #fff;
+    color: black;
+}
+@media (max-width:1080px) {
+    .container .wrapper{
+        gap: 20px;
+        
+    }
+    .container .wrapper .imageContainer{
+        width: 450px;
+    }
+     .container .wrapper .imageContaine img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+     .container .wrapper .textContainer{
+        width: 450px;
+        height: 300px;
+        gap: 20px;
+        padding: 0 3%;
+    }
+    .container .wrapper .textContainer h2{
+        font-size: 50px;
+    
+    }
+    .container .wrapper .textContainer p{
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+}
+@media (max-width:920px) {
+    .container .wrapper .imageContainer{
+        width: 300px;
+    }
+}
+@media (max-width:791px) {
+    .container .wrapper .imageContainer{
+        width: 200px;
+    }
+}
+@media (max-width:693px) {
+    .portfolio .progress{
+        position: sticky;
+        bottom: 0;
+    }
+    .container .wrapper{
+       flex-direction: column;
+       gap: 30px;
+       margin-top: 140px;
+    }
+    .container .wrapper .imageContainer{
+        width: 450px;
+        
+    }
+    .container .wrapper .textContainer{
+        flex: 1;
+        height: 400px;
+    }
+    .container .wrapper .textContainer h2{
+        font-size: 30px;
+    
+    }
+    .container .wrapper .textContainer p{
+        font-size: 14px;
+        
+    }
+    .container .wrapper .textContainer button{
+        margin-top: -250px;
+    }
+}
+    
+@media (max-width:610px) {
+    .portfolio .progress{
+        font-size: 24px;
+    }
+    .portfolio .progress .progress-bar{
+        height: 7px;
+    }
+}
+@media (max-width:470px) {
+    .container .wrapper .imageContainer{
+        width: 300px;
+        max-height: 200px;
+    }
+    .container .wrapper .textContainer{
+       align-items: center;
+       justify-content: center;
+    }
+    .container .wrapper .textContainer h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .container .wrapper .textContainer p{
+        font-size: 14px;
+        width: 300px;
+    }
+    .container .wrapper .textContainer button{
+        margin-top: -330px;
+    }
+}
+   
+@media (max-width:410px) {
+    .portfolio .progress{
+        font-size: 14px;
+    }
+    .portfolio .progress .progress-bar{
+        height: 5px;
+    }
+}

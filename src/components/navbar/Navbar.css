@@ -1,0 +1,36 @@
+.navbar{
+    height: 100px;
+    padding: 0 7%;
+}
+.navbar .wrapper{
+    max-width: 1336px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.navbar .wrapper span{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+.navbar .wrapper .socials{
+   display: flex;
+   gap: 20px;
+}
+.navbar .wrapper .socials img{
+    height: 18px;
+    width: 18px;
+}
+@media (max-width:1140px) {
+    .navbar .wrapper{
+        justify-content: space-around;
+    }
+}
+@media (max-width:525px) {
+    .navbar .wrapper .logo{
+        display: none;
+    }
+}
